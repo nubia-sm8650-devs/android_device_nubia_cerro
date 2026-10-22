@@ -12,6 +12,11 @@ DEVICE_PATH := device/nubia/cerro
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/mixer_paths_pineapple_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/mixer_paths_pineapple_mtp.xml
 
+ifeq ($(TARGET_KERNEL_MAINLINE),true)
+PRODUCT_COPY_FILES += \
+    vendor/nubia/cerro/proprietary/vendor/firmware/aw882xx_acf.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/aw882xx_acf.bin
+endif
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
