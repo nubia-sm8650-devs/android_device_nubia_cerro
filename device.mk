@@ -30,8 +30,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.secure_element-service.thales
 
+ifeq ($(TARGET_KERNEL_MAINLINE),true)
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/libse-gto-hal_mainline.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libse-gto-hal.conf
+else
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/libse-gto-hal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libse-gto-hal.conf
+endif
 
 # Slider
 PRODUCT_PACKAGES += \
