@@ -26,6 +26,13 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     SettingsProviderResCerro
 
+# Secure element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element-service.thales
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/libse-gto-hal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libse-gto-hal.conf
+
 # Slider
 PRODUCT_PACKAGES += \
     LineageSlider \

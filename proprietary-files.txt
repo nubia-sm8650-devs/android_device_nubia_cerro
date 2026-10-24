@@ -182,8 +182,6 @@ vendor/etc/st54l_conf.txt
 vendor/etc/media_profiles_pineapple.xml
 
 # Secure element
-vendor/bin/hw/android.hardware.secure_element-service-aidl
-vendor/etc/init/android.hardware.secure_element.rc
 vendor/etc/vintf/manifest/android.hardware.secure_element.xml
 
 # Sensors

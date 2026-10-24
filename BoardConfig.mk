@@ -5,10 +5,6 @@
 
 include device/nubia/sm8650-common/BoardConfigCommon.mk
 
-# HIDL
-ODM_MANIFEST_FILES += \
-    $(DEVICE_PATH)/manifest_odm.xml
-
 # Kernel
 ifeq ($(TARGET_KERNEL_MAINLINE),true)
 TARGET_KERNEL_DTB := qcom/sm8650-zte-cerro.dtb
