@@ -22,6 +22,12 @@ endif
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
 
+# Camera
+ifeq ($(TARGET_KERNEL_MAINLINE),true)
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/camera/camxoverridesettings_mainline.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt
+endif
+
 # Overlays
 PRODUCT_PACKAGES += \
     SettingsProviderResCerro
