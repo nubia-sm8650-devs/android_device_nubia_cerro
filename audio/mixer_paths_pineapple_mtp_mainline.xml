@@ -286,7 +286,9 @@
         <ctl name="Bottom Amp Playback Switch" value="1" />
         <ctl name="Top Amp Playback Switch" value="1" />
         <ctl name="Top Amp Profile Set" value="Music" />
+        <ctl name="Top Amp PCM Playback Volume" value="351" />
         <ctl name="Bottom Amp Profile Set" value="Music" />
+        <ctl name="Bottom Amp PCM Playback Volume" value="351" />
     </path>
 
     <path name="speaker-prot">
@@ -309,6 +311,7 @@
         <ctl name="Bottom Amp Playback Switch" value="1" />
         <ctl name="Top Amp Playback Switch" value="0" />
         <ctl name="Bottom Amp Profile Set" value="Music" />
+        <ctl name="Bottom Amp PCM Playback Volume" value="351" />
     </path>
 
     <path name="speaker-mono-prot">
@@ -319,6 +322,7 @@
         <ctl name="Top Amp Playback Switch" value="1" />
         <ctl name="Bottom Amp Playback Switch" value="0" />
         <ctl name="Top Amp Profile Set" value="Music" />
+        <ctl name="Top Amp PCM Playback Volume" value="351" />
     </path>
 
     <path name="speaker-mono-2-prot">
@@ -478,6 +482,7 @@
         <ctl name="Top Amp Playback Switch" value="1" />
         <ctl name="Bottom Amp Playback Switch" value="0" />
         <ctl name="Top Amp Profile Set" value="Receiver" />
+        <ctl name="Top Amp PCM Playback Volume" value="306" />
     </path>
 
     <path name="handset-mic">
@@ -601,18 +606,23 @@
     <path name="voice-speaker">
         <path name="speaker" />
         <ctl name="Top Amp Profile Set" value="Music" />
+        <ctl name="Top Amp PCM Playback Volume" value="351" />
         <ctl name="Bottom Amp Profile Set" value="Music" />
+        <ctl name="Bottom Amp PCM Playback Volume" value="351" />
     </path>
 
     <path name="voice-speaker-stereo">
         <path name="speaker" />
         <ctl name="Top Amp Profile Set" value="Music" />
+        <ctl name="Top Amp PCM Playback Volume" value="351" />
         <ctl name="Bottom Amp Profile Set" value="Music" />
+        <ctl name="Bottom Amp PCM Playback Volume" value="351" />
     </path>
 
     <path name="voice-speaker-2">
         <path name="speaker-mono-2" />
         <ctl name="Bottom Amp Profile Set" value="Music" />
+        <ctl name="Bottom Amp PCM Playback Volume" value="351" />
     </path>
 
     <path name="voice-speaker-hdk">
@@ -1255,11 +1265,13 @@
         <ctl name="Bottom Amp Playback Switch" value="0" />
         <ctl name="Top Amp Playback Switch" value="1" />
         <ctl name="Top Amp Profile Set" value="Music" />
+        <ctl name="Top Amp PCM Playback Volume" value="351" />
     </path>
     <path name="speaker-down-pv">
         <ctl name="Top Amp Playback Switch" value="0" />
         <ctl name="Bottom Amp Playback Switch" value="1" />
         <ctl name="Bottom Amp Profile Set" value="Music" />
+        <ctl name="Bottom Amp PCM Playback Volume" value="351" />
     </path>
 
     <path name="speaker-up-pv-prot">
