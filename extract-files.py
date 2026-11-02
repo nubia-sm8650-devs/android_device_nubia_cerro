@@ -18,6 +18,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
+    'device/nubia/cerro',
     'vendor/nubia/sm8650-common',
     'hardware/qcom-caf/sm8650',
 ]
@@ -89,7 +90,9 @@ blob_fixups: blob_fixups_user_type = {
         'nubia-camera-patches'
     ),
     'vendor/lib64/hw/sensors.hal.tof.so': blob_fixup()
-        .binary_regex_replace(b'\x00input\x00', b'\x00fakei\x00'),
+        .clear_symbol_version('__open_2')
+        .binary_regex_replace(b'\x00__open_2\x00', b'\x00tof_open\x00')
+        .add_needed('libtof_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
