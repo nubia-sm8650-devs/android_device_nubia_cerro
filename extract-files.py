@@ -86,6 +86,9 @@ blob_fixups: blob_fixups_user_type = {
         'android.hardware.graphics.allocator-V1-ndk.so',
         'android.hardware.graphics.allocator-V2-ndk.so',
     ),
+    'vendor/lib64/hw/camera.qcom.so': blob_fixup().binary_regex_replace(
+        b'\x00/sys/kernel/boot_adsp\x00', b'\x00/sys/class/remoteproc\x00'
+    ),
     'system/priv-app/NubiaCamera/NubiaCamera.apk': blob_fixup().apktool_patch(
         'nubia-camera-patches'
     ),
