@@ -34,7 +34,7 @@
     {
       "id": 2,
       "subgraph": "0xb0000006",
-      "direction": "playback",
+      "direction": "duplex",
       "mode": "hostless",
       "capabilities": {
         "formats": ["S16_LE", "S24_LE", "S24_3LE", "S32_LE"],
@@ -529,7 +529,7 @@
     {
       "id": 35,
       "subgraph": "0xb0000103",
-      "direction": "playback",
+      "direction": "duplex",
       "mode": "hostless",
       "capabilities": {
         "formats": ["S16_LE", "S24_LE", "S24_3LE", "S32_LE"],
