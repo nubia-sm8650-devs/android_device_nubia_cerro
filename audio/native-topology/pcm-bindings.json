@@ -33,6 +33,21 @@
     },
     {
       "id": 2,
+      "subgraph": "0xb0000006",
+      "direction": "playback",
+      "mode": "hostless",
+      "capabilities": {
+        "formats": ["S16_LE", "S24_LE", "S24_3LE", "S32_LE"],
+        "rates": [
+          8000, 11025, 16000, 22050, 32000, 44100, 48000, 64000, 88200, 96000,
+          176400, 192000
+        ],
+        "channels_min": 1,
+        "channels_max": 8
+      }
+    },
+    {
+      "id": 3,
       "subgraph": "0xb000000a",
       "direction": "capture",
       "mode": "pcm",
@@ -47,7 +62,7 @@
       }
     },
     {
-      "id": 3,
+      "id": 4,
       "subgraph": "0xb000000c",
       "direction": "capture",
       "mode": "pcm",
@@ -62,7 +77,7 @@
       }
     },
     {
-      "id": 4,
+      "id": 5,
       "subgraph": "0xb000000e",
       "direction": "playback",
       "mode": "pcm",
@@ -77,7 +92,7 @@
       }
     },
     {
-      "id": 5,
+      "id": 6,
       "subgraph": "0xb0000010",
       "direction": "playback",
       "mode": "pcm",
@@ -92,10 +107,10 @@
       }
     },
     {
-      "id": 6,
+      "id": 7,
       "subgraph": "0xb0000012",
       "direction": "playback",
-      "mode": "pcm",
+      "mode": "compress",
       "capabilities": {
         "formats": ["S16_LE", "S24_LE", "S24_3LE", "S32_LE"],
         "rates": [
@@ -107,7 +122,37 @@
       }
     },
     {
-      "id": 7,
+      "id": 8,
+      "subgraph": "0xb0000016",
+      "direction": "capture",
+      "mode": "hostless",
+      "capabilities": {
+        "formats": ["S16_LE", "S24_LE", "S24_3LE", "S32_LE"],
+        "rates": [
+          8000, 11025, 16000, 22050, 32000, 44100, 48000, 64000, 88200, 96000,
+          176400, 192000
+        ],
+        "channels_min": 1,
+        "channels_max": 8
+      }
+    },
+    {
+      "id": 9,
+      "subgraph": "0xb0000017",
+      "direction": "playback",
+      "mode": "hostless",
+      "capabilities": {
+        "formats": ["S16_LE", "S24_LE", "S24_3LE", "S32_LE"],
+        "rates": [
+          8000, 11025, 16000, 22050, 32000, 44100, 48000, 64000, 88200, 96000,
+          176400, 192000
+        ],
+        "channels_min": 1,
+        "channels_max": 8
+      }
+    },
+    {
+      "id": 10,
       "subgraph": "0xb0000023",
       "direction": "playback",
       "mode": "pcm",
@@ -122,7 +167,37 @@
       }
     },
     {
-      "id": 8,
+      "id": 11,
+      "subgraph": "0xb000003f",
+      "direction": "capture",
+      "mode": "hostless",
+      "capabilities": {
+        "formats": ["S16_LE", "S24_LE", "S24_3LE", "S32_LE"],
+        "rates": [
+          8000, 11025, 16000, 22050, 32000, 44100, 48000, 64000, 88200, 96000,
+          176400, 192000
+        ],
+        "channels_min": 1,
+        "channels_max": 8
+      }
+    },
+    {
+      "id": 12,
+      "subgraph": "0xb0000040",
+      "direction": "playback",
+      "mode": "hostless",
+      "capabilities": {
+        "formats": ["S16_LE", "S24_LE", "S24_3LE", "S32_LE"],
+        "rates": [
+          8000, 11025, 16000, 22050, 32000, 44100, 48000, 64000, 88200, 96000,
+          176400, 192000
+        ],
+        "channels_min": 1,
+        "channels_max": 8
+      }
+    },
+    {
+      "id": 13,
       "subgraph": "0xb0000057",
       "direction": "capture",
       "mode": "pcm",
@@ -137,7 +212,7 @@
       }
     },
     {
-      "id": 9,
+      "id": 14,
       "subgraph": "0xb0000075",
       "direction": "capture",
       "mode": "pcm",
@@ -152,7 +227,7 @@
       }
     },
     {
-      "id": 10,
+      "id": 15,
       "subgraph": "0xb0000081",
       "direction": "capture",
       "mode": "pcm",
@@ -167,7 +242,7 @@
       }
     },
     {
-      "id": 11,
+      "id": 16,
       "subgraph": "0xb0000082",
       "direction": "capture",
       "mode": "pcm",
@@ -182,7 +257,22 @@
       }
     },
     {
-      "id": 12,
+      "id": 17,
+      "subgraph": "0xb0000085",
+      "direction": "capture",
+      "mode": "hostless",
+      "capabilities": {
+        "formats": ["S16_LE", "S24_LE", "S24_3LE", "S32_LE"],
+        "rates": [
+          8000, 11025, 16000, 22050, 32000, 44100, 48000, 64000, 88200, 96000,
+          176400, 192000
+        ],
+        "channels_min": 1,
+        "channels_max": 8
+      }
+    },
+    {
+      "id": 18,
       "subgraph": "0xb000008a",
       "direction": "capture",
       "mode": "pcm",
@@ -197,7 +287,7 @@
       }
     },
     {
-      "id": 13,
+      "id": 19,
       "subgraph": "0xb000008d",
       "direction": "playback",
       "mode": "pcm",
@@ -212,7 +302,7 @@
       }
     },
     {
-      "id": 14,
+      "id": 20,
       "subgraph": "0xb00000c6",
       "direction": "playback",
       "mode": "pcm",
@@ -227,7 +317,7 @@
       }
     },
     {
-      "id": 15,
+      "id": 21,
       "subgraph": "0xb00000c7",
       "direction": "capture",
       "mode": "pcm",
@@ -242,7 +332,7 @@
       }
     },
     {
-      "id": 16,
+      "id": 22,
       "subgraph": "0xb00000c8",
       "direction": "capture",
       "mode": "pcm",
@@ -257,7 +347,7 @@
       }
     },
     {
-      "id": 17,
+      "id": 23,
       "subgraph": "0xb00000cd",
       "direction": "capture",
       "mode": "pcm",
@@ -272,7 +362,7 @@
       }
     },
     {
-      "id": 18,
+      "id": 24,
       "subgraph": "0xb00000ce",
       "direction": "capture",
       "mode": "pcm",
@@ -287,7 +377,7 @@
       }
     },
     {
-      "id": 19,
+      "id": 25,
       "subgraph": "0xb00000d0",
       "direction": "capture",
       "mode": "pcm",
@@ -302,7 +392,7 @@
       }
     },
     {
-      "id": 20,
+      "id": 26,
       "subgraph": "0xb00000d6",
       "direction": "playback",
       "mode": "pcm",
@@ -317,7 +407,7 @@
       }
     },
     {
-      "id": 21,
+      "id": 27,
       "subgraph": "0xb00000d9",
       "direction": "capture",
       "mode": "pcm",
@@ -332,7 +422,7 @@
       }
     },
     {
-      "id": 22,
+      "id": 28,
       "subgraph": "0xb00000ea",
       "direction": "playback",
       "mode": "pcm",
@@ -347,7 +437,7 @@
       }
     },
     {
-      "id": 23,
+      "id": 29,
       "subgraph": "0xb00000ec",
       "direction": "capture",
       "mode": "pcm",
@@ -362,7 +452,7 @@
       }
     },
     {
-      "id": 24,
+      "id": 30,
       "subgraph": "0xb00000ed",
       "direction": "capture",
       "mode": "pcm",
@@ -377,7 +467,7 @@
       }
     },
     {
-      "id": 25,
+      "id": 31,
       "subgraph": "0xb00000f0",
       "direction": "capture",
       "mode": "pcm",
@@ -392,7 +482,7 @@
       }
     },
     {
-      "id": 26,
+      "id": 32,
       "subgraph": "0xb00000f1",
       "direction": "capture",
       "mode": "pcm",
@@ -407,7 +497,7 @@
       }
     },
     {
-      "id": 27,
+      "id": 33,
       "subgraph": "0xb00000f6",
       "direction": "capture",
       "mode": "pcm",
@@ -422,7 +512,7 @@
       }
     },
     {
-      "id": 28,
+      "id": 34,
       "subgraph": "0xb00000fb",
       "direction": "capture",
       "mode": "pcm",
@@ -437,7 +527,22 @@
       }
     },
     {
-      "id": 29,
+      "id": 35,
+      "subgraph": "0xb0000103",
+      "direction": "playback",
+      "mode": "hostless",
+      "capabilities": {
+        "formats": ["S16_LE", "S24_LE", "S24_3LE", "S32_LE"],
+        "rates": [
+          8000, 11025, 16000, 22050, 32000, 44100, 48000, 64000, 88200, 96000,
+          176400, 192000
+        ],
+        "channels_min": 1,
+        "channels_max": 8
+      }
+    },
+    {
+      "id": 36,
       "subgraph": "0xb000010f",
       "direction": "capture",
       "mode": "pcm",
@@ -452,7 +557,22 @@
       }
     },
     {
-      "id": 30,
+      "id": 37,
+      "subgraph": "0xb0000113",
+      "direction": "capture",
+      "mode": "hostless",
+      "capabilities": {
+        "formats": ["S16_LE", "S24_LE", "S24_3LE", "S32_LE"],
+        "rates": [
+          8000, 11025, 16000, 22050, 32000, 44100, 48000, 64000, 88200, 96000,
+          176400, 192000
+        ],
+        "channels_min": 1,
+        "channels_max": 8
+      }
+    },
+    {
+      "id": 38,
       "subgraph": "0xb0000118",
       "direction": "playback",
       "mode": "pcm",
@@ -467,7 +587,7 @@
       }
     },
     {
-      "id": 31,
+      "id": 39,
       "subgraph": "0xb000011b",
       "direction": "capture",
       "mode": "pcm",
@@ -482,7 +602,7 @@
       }
     },
     {
-      "id": 32,
+      "id": 40,
       "subgraph": "0xb000011c",
       "direction": "capture",
       "mode": "pcm",
@@ -497,7 +617,7 @@
       }
     },
     {
-      "id": 33,
+      "id": 41,
       "subgraph": "0xb000011d",
       "direction": "capture",
       "mode": "pcm",
@@ -512,7 +632,7 @@
       }
     },
     {
-      "id": 34,
+      "id": 42,
       "subgraph": "0xb000011e",
       "direction": "capture",
       "mode": "pcm",
@@ -527,7 +647,7 @@
       }
     },
     {
-      "id": 35,
+      "id": 43,
       "subgraph": "0xb000011f",
       "direction": "capture",
       "mode": "pcm",
@@ -542,7 +662,7 @@
       }
     },
     {
-      "id": 36,
+      "id": 44,
       "subgraph": "0xb0000120",
       "direction": "capture",
       "mode": "pcm",
@@ -557,7 +677,7 @@
       }
     },
     {
-      "id": 37,
+      "id": 45,
       "subgraph": "0xb000012b",
       "direction": "playback",
       "mode": "pcm",
@@ -572,7 +692,7 @@
       }
     },
     {
-      "id": 38,
+      "id": 46,
       "subgraph": "0xb000012d",
       "direction": "playback",
       "mode": "pcm",
@@ -587,7 +707,22 @@
       }
     },
     {
-      "id": 39,
+      "id": 47,
+      "subgraph": "0xb0000138",
+      "direction": "capture",
+      "mode": "hostless",
+      "capabilities": {
+        "formats": ["S16_LE", "S24_LE", "S24_3LE", "S32_LE"],
+        "rates": [
+          8000, 11025, 16000, 22050, 32000, 44100, 48000, 64000, 88200, 96000,
+          176400, 192000
+        ],
+        "channels_min": 1,
+        "channels_max": 8
+      }
+    },
+    {
+      "id": 48,
       "subgraph": "0xb000014a",
       "direction": "playback",
       "mode": "pcm",
@@ -602,22 +737,7 @@
       }
     },
     {
-      "id": 40,
-      "subgraph": "0xb0000158",
-      "direction": "capture",
-      "mode": "pcm",
-      "capabilities": {
-        "formats": ["S16_LE", "S24_LE", "S24_3LE", "S32_LE"],
-        "rates": [
-          8000, 11025, 16000, 22050, 32000, 44100, 48000, 64000, 88200, 96000,
-          176400, 192000
-        ],
-        "channels_min": 1,
-        "channels_max": 8
-      }
-    },
-    {
-      "id": 41,
+      "id": 49,
       "subgraph": "0xb000015f",
       "direction": "playback",
       "mode": "pcm",
@@ -632,7 +752,7 @@
       }
     },
     {
-      "id": 42,
+      "id": 50,
       "subgraph": "0xb0000168",
       "direction": "playback",
       "mode": "pcm",
@@ -647,7 +767,7 @@
       }
     },
     {
-      "id": 43,
+      "id": 51,
       "subgraph": "0xb000018c",
       "direction": "capture",
       "mode": "pcm",
@@ -662,7 +782,7 @@
       }
     },
     {
-      "id": 44,
+      "id": 52,
       "subgraph": "0xb000018f",
       "direction": "capture",
       "mode": "pcm",
@@ -677,7 +797,7 @@
       }
     },
     {
-      "id": 45,
+      "id": 53,
       "subgraph": "0xb0000194",
       "direction": "capture",
       "mode": "pcm",
@@ -692,7 +812,7 @@
       }
     },
     {
-      "id": 46,
+      "id": 54,
       "subgraph": "0xb0000195",
       "direction": "capture",
       "mode": "pcm",
