@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "widgets": [
+    {
+      "dai": 104,
+      "direction": "playback",
+      "name": "DISPLAY_PORT_RX_0 Playback",
+      "aif": {"id": 0, "name": "DISPLAY_PORT-RX"},
+      "media_controls": {
+        "rate": "DisplayPort Playback Rate",
+        "format": "DisplayPort Playback Format",
+        "channels": "DisplayPort Playback Channels",
+        "data_format": "DISPLAY_PORT_RX_0 Data Format"
+      }
+    },
+    {
+      "dai": 153,
+      "direction": "capture",
+      "name": "USB Capture",
+      "aif": {"id": 1, "name": "USB_AUDIO-TX"},
+      "media_controls": {
+        "rate": "USB Capture Rate",
+        "format": "USB Capture Format",
+        "channels": "USB Capture Channels",
+        "data_format": "USB_TX Data Format"
+      }
+    },
+    {
+      "dai": 136,
+      "direction": "playback",
+      "name": "USB Playback",
+      "aif": {"id": 2, "name": "USB_AUDIO-RX"},
+      "media_controls": {
+        "rate": "USB Playback Rate",
+        "format": "USB Playback Format",
+        "channels": "USB Playback Channels",
+        "data_format": "USB_RX Data Format"
+      }
+    },
+    {
+      "dai": 15,
+      "direction": "capture",
+      "name": "Slimbus6 Capture",
+      "aif": {"id": 3, "name": "SLIM-DEV1-TX-7"},
+      "media_controls": {
+        "rate": "BT Capture Rate",
+        "format": "BT Capture Format",
+        "channel_map": "BT Capture Channel Map",
+        "data_format": "SLIMBUS_6_TX Data Format"
+      }
+    },
+    {
+      "dai": 14,
+      "direction": "playback",
+      "name": "Slimbus6 Playback",
+      "aif": {"id": 4, "name": "SLIM-DEV1-RX-7"},
+      "media_controls": {
+        "rate": "BT Playback Rate",
+        "format": "BT Playback Format",
+        "channel_map": "BT Playback Channel Map",
+        "data_format": "SLIMBUS_6_RX Data Format"
+      }
+    },
+    {
+      "dai": 110,
+      "direction": "capture",
+      "name": "VA_CODEC_DMA_TX_0 Capture",
+      "aif": {"id": 5, "name": "CODEC_DMA-LPAIF_VA-TX-0"},
+      "media_controls": {
+        "rate": "VA Capture Rate",
+        "format": "VA Capture Format",
+        "channels": "VA Capture Channels",
+        "data_format": "VA_CODEC_DMA_TX_0 Data Format"
+      }
+    },
+    {
+      "dai": 120,
+      "direction": "capture",
+      "name": "TX_CODEC_DMA_TX_3 Capture",
+      "aif": {"id": 6, "name": "CODEC_DMA-LPAIF_RXTX-TX-3"},
+      "media_controls": {
+        "rate": "WCD Capture Rate",
+        "format": "WCD Capture Format",
+        "channels": "WCD Capture Channels",
+        "data_format": "TX_CODEC_DMA_TX_3 Data Format"
+      }
+    },
+    {
+      "dai": 113,
+      "direction": "playback",
+      "name": "RX_CODEC_DMA_RX_0 Playback",
+      "aif": {"id": 7, "name": "CODEC_DMA-LPAIF_RXTX-RX-0"},
+      "media_controls": {
+        "rate": "WCD Playback Rate",
+        "format": "WCD Playback Format",
+        "channels": "WCD Playback Channels",
+        "data_format": "RX_CODEC_DMA_RX_0 Data Format"
+      }
+    },
+    {
+      "dai": 17,
+      "direction": "capture",
+      "name": "Primary MI2S Capture",
+      "aif": {"id": 8, "name": "MI2S-LPAIF-TX-PRIMARY"},
+      "media_controls": {
+        "rate": "Speaker Feedback Rate",
+        "format": "Speaker Feedback Format",
+        "channels": "Speaker Feedback Channels",
+        "data_format": "PRI_MI2S_TX Data Format"
+      }
+    },
+    {
+      "dai": 16,
+      "direction": "playback",
+      "name": "Primary MI2S Playback",
+      "aif": {"id": 9, "name": "MI2S-LPAIF-RX-PRIMARY"},
+      "media_controls": {
+        "rate": "Speaker Playback Rate",
+        "format": "Speaker Playback Format",
+        "channels": "Speaker Playback Channels",
+        "data_format": "PRI_MI2S_RX Data Format"
+      }
+    }
+  ]
+}

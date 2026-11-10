@@ -4,4 +4,61 @@
 //
 
 soong_namespace {
+    imports: [
+        "device/nubia/sm8650-common",
+        "hardware/qcom-caf/sm8650",
+        "vendor/nubia/cerro",
+    ],
+}
+
+genrule {
+    name: "cerro-native-topology",
+    tools: [
+        "alsatplg",
+        "ar-acdb-topology",
+    ],
+    srcs: [
+        ":cerro-acdb",
+        ":sm8650-common-resource-manager",
+        ":sm8650-common-usecase-kv",
+        "audio/native-topology/board-links.json",
+        "audio/native-topology/hardware-widgets.json",
+        "audio/native-topology/pcm-bindings.json",
+        "audio/native-topology/unavailable.json",
+    ],
+    out: [
+        "SM8650-CERRO-tplg.bin",
+        "audioreach-native-bindings.json",
+    ],
+    cmd: "$(location ar-acdb-topology) --corpus --graph-id 256 " +
+        "$$(printf -- '--acdb %s ' $(locations :cerro-acdb)) " +
+        "--resource-manager $(location :sm8650-common-resource-manager) " +
+        "--usecase-kv $(location :sm8650-common-usecase-kv) " +
+        "--board-links $(location audio/native-topology/board-links.json) " +
+        "--unavailable $(location audio/native-topology/unavailable.json) " +
+        "--hardware-widgets " +
+        "$(location audio/native-topology/hardware-widgets.json) " +
+        "--pcm-bindings $(location audio/native-topology/pcm-bindings.json) " +
+        "--report $(genDir)/report.json " +
+        "--output $(genDir)/topology.conf " +
+        "--bindings-output $(genDir)/audioreach-native-bindings.json && " +
+        "($(location alsatplg) -c $(genDir)/topology.conf " +
+        "-o $(genDir)/SM8650-CERRO-tplg.bin 2>$(genDir)/alsatplg.log || " +
+        "(cat $(genDir)/alsatplg.log >&2; exit 1))",
+}
+
+prebuilt_firmware {
+    name: "cerro-native-topology-firmware",
+    vendor: true,
+    src: ":cerro-native-topology{SM8650-CERRO-tplg.bin}",
+    filename_from_src: true,
+    sub_dir: "qcom/sm8650",
+}
+
+prebuilt_etc {
+    name: "cerro-native-topology-bindings",
+    vendor: true,
+    src: ":cerro-native-topology{audioreach-native-bindings.json}",
+    filename_from_src: true,
+    sub_dir: "audio",
 }

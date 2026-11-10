@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "devices": [
+    {
+      "device": "PAL_DEVICE_OUT_AUX_LINE",
+      "reason": "The resource manager has no AUX_LINE device profile."
+    },
+    {
+      "device": "PAL_DEVICE_IN_USB_DEVICE",
+      "reason": "The resource manager has no USB_DEVICE capture profile."
+    },
+    {
+      "device": "PAL_DEVICE_OUT_HAPTICS_DEVICE",
+      "reason": "Cerro has no haptics audio path on its sound card."
+    },
+    {
+      "device": "PAL_DEVICE_IN_HAPTICS_VI_FEEDBACK",
+      "reason": "Cerro has no haptics audio path on its sound card."
+    },
+    {
+      "device": "PAL_DEVICE_IN_FM_TUNER",
+      "reason": "Cerro has no FM tuner link on its sound card."
+    },
+    {
+      "device": "PAL_DEVICE_OUT_ULTRASOUND_DEDICATED",
+      "reason": "Cerro has no ultrasound path on its sound card."
+    },
+    {
+      "device": "PAL_DEVICE_IN_ULTRASOUND_MIC",
+      "reason": "Cerro has no ultrasound path on its sound card."
+    },
+    {
+      "device": "PAL_DEVICE_IN_CPS_FEEDBACK",
+      "reason": "No WSA amplifiers, so no CPS feedback link."
+    },
+    {
+      "device": "PAL_DEVICE_IN_EXT_EC_REF",
+      "reason": "External EC reference needs tertiary MI2S, absent on cerro."
+    }
+  ],
+  "selections": [
+    {
+      "graph_keys": [["0xa2000000", "0xa2000004"]],
+      "reason": "Uses CODEC_DMA, but the handset profile is primary MI2S."
+    },
+    {
+      "graph_keys": [
+        ["0xa1000000", "0xa1000003"],
+        ["0xa2000000", "0xa2000004"]
+      ],
+      "reason": "Loopback uses CODEC_DMA, but the handset is primary MI2S."
+    }
+  ]
+}

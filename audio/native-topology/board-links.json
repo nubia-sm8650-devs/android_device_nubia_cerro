@@ -1,0 +1,101 @@
+[
+  {
+    "dai": 104,
+    "name": "DisplayPort Playback",
+    "path": "/sound/dp-playback-dai-link",
+    "provider": "/soc@0/remoteproc@6800000/glink-edge/gpr/service@1/bedais",
+    "transport": {
+      "direction": "playback",
+      "family": "DISPLAY_PORT",
+      "port": 0
+    }
+  },
+  {
+    "dai": 153,
+    "name": "USB Capture",
+    "path": "/sound/usb-capture-dai-link",
+    "provider": "/soc@0/remoteproc@6800000/glink-edge/gpr/service@1/bedais",
+    "transport": {"direction": "capture", "family": "USB_AUDIO"}
+  },
+  {
+    "dai": 136,
+    "name": "USB Playback",
+    "path": "/sound/usb-playback-dai-link",
+    "provider": "/soc@0/remoteproc@6800000/glink-edge/gpr/service@1/bedais",
+    "transport": {"direction": "playback", "family": "USB_AUDIO"}
+  },
+  {
+    "dai": 15,
+    "name": "BT Capture",
+    "path": "/sound/bt-capture-dai-link",
+    "provider": "/soc@0/remoteproc@6800000/glink-edge/gpr/service@1/bedais",
+    "transport": {"direction": "capture", "family": "SLIM", "port": 6}
+  },
+  {
+    "dai": 14,
+    "name": "BT Playback",
+    "path": "/sound/bt-playback-dai-link",
+    "provider": "/soc@0/remoteproc@6800000/glink-edge/gpr/service@1/bedais",
+    "transport": {"direction": "playback", "family": "SLIM", "port": 6}
+  },
+  {
+    "dai": 110,
+    "name": "VA Capture",
+    "path": "/sound/va-capture-dai-link",
+    "provider": "/soc@0/remoteproc@6800000/glink-edge/gpr/service@1/bedais",
+    "transport": {
+      "bank": 3,
+      "direction": "capture",
+      "family": "CODEC_DMA",
+      "index": 1
+    }
+  },
+  {
+    "dai": 120,
+    "name": "WCD Capture",
+    "path": "/sound/wcd-capture-dai-link",
+    "provider": "/soc@0/remoteproc@6800000/glink-edge/gpr/service@1/bedais",
+    "transport": {
+      "bank": 1,
+      "direction": "capture",
+      "family": "CODEC_DMA",
+      "index": 4
+    }
+  },
+  {
+    "dai": 113,
+    "name": "WCD Playback",
+    "path": "/sound/wcd-playback-dai-link",
+    "provider": "/soc@0/remoteproc@6800000/glink-edge/gpr/service@1/bedais",
+    "transport": {
+      "bank": 1,
+      "direction": "playback",
+      "family": "CODEC_DMA",
+      "index": 1
+    }
+  },
+  {
+    "dai": 17,
+    "name": "Speaker Feedback",
+    "path": "/sound/speaker-feedback-dai-link",
+    "provider": "/soc@0/remoteproc@6800000/glink-edge/gpr/service@1/bedais",
+    "transport": {
+      "bank": 0,
+      "direction": "capture",
+      "family": "MI2S",
+      "index": 0
+    }
+  },
+  {
+    "dai": 16,
+    "name": "Speaker Playback",
+    "path": "/sound/speaker-playback-dai-link",
+    "provider": "/soc@0/remoteproc@6800000/glink-edge/gpr/service@1/bedais",
+    "transport": {
+      "bank": 0,
+      "direction": "playback",
+      "family": "MI2S",
+      "index": 0
+    }
+  }
+]
