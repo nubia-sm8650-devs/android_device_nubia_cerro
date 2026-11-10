@@ -9,6 +9,8 @@ include device/nubia/sm8650-common/BoardConfigCommon.mk
 ifeq ($(TARGET_KERNEL_MAINLINE),true)
 TARGET_KERNEL_DTB := qcom/sm8650-zte-cerro.dtb
 TARGET_DTB_LIST_WILDCARD := qcom/sm8650-zte
+
+$(call soong_config_set,qtiaudio,feature_native_topology,true)
 else
 TARGET_KERNEL_CONFIG += \
     oem/boards/cerro_diff.config

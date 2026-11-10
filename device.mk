@@ -13,6 +13,14 @@ ifeq ($(TARGET_KERNEL_MAINLINE),true)
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/mixer_paths_pineapple_mtp_mainline.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/mixer_paths_pineapple_mtp.xml \
     vendor/nubia/cerro/proprietary/vendor/firmware/aw882xx_acf.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/aw882xx_acf.bin
+
+PRODUCT_PACKAGES += \
+    cerro-native-topology-bindings \
+    cerro-native-topology-firmware
+
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.audio.native_topology.alias=pineapple-mtp-snd-card \
+    ro.vendor.audio.native_topology.card=SM8650-CERRO
 else
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/mixer_paths_pineapple_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/mixer_paths_pineapple_mtp.xml
