@@ -291,6 +291,7 @@
       "subgraph": "0xb000008d",
       "direction": "playback",
       "mode": "pcm",
+      "backend": "Dummy Playback",
       "capabilities": {
         "formats": ["S16_LE", "S24_LE", "S24_3LE", "S32_LE"],
         "rates": [
@@ -396,6 +397,7 @@
       "subgraph": "0xb00000d6",
       "direction": "playback",
       "mode": "pcm",
+      "backend": "Dummy Playback",
       "capabilities": {
         "formats": ["S16_LE", "S24_LE", "S24_3LE", "S32_LE"],
         "rates": [
